@@ -27,3 +27,17 @@ int main(){
     scanf("%d", &input);
     printf("%d\n", lastDigit(input));
 }
+
+Calculating the Sum of Array Elements:
+
+#include <stdio.h>
+
+int main() {
+    int a[6] = {3, 7, 1, 4, 6, 8};
+    int sum = 0, i;
+    for (i = 0; i < 6; i++) {
+        sum = sum + a[i];
+    }
+    printf("The sum of the array elements is: %d\n", sum);
+    return 0;
+}
