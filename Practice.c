@@ -41,3 +41,14 @@ int main() {
     printf("The sum of the array elements is: %d\n", sum);
     return 0;
 }
+
+Sum of three numbers:
+
+#include<stdio.h>
+int main(){
+    int a,b,c,sum;
+    printf("Enter the numbers: ");
+    scanf("%d %d %d",&a,&b,&c);
+    sum=a+b+c;
+    printf("The sum of three numbers is: %d\n",sum);
+}
