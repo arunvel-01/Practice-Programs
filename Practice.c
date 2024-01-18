@@ -52,3 +52,19 @@ int main(){
     sum=a+b+c;
     printf("The sum of three numbers is: %d\n",sum);
 }
+
+Sum of N numbers: 
+
+#include <stdio.h>
+int main() {
+    int n, num,sum=0;
+    printf("Enter the number of values: ");
+    scanf("%d",&n);
+    printf("Enter %d numbers:\n",n);
+    for (int i=0;i<n;i++) {
+        printf("Number %d: ",i+1);
+        scanf("%d",&num);
+        sum+=num;
+    }
+    printf("Sum of %d numbers: %d\n",n,sum);
+}
