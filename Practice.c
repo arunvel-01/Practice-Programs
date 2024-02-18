@@ -68,3 +68,49 @@ int main() {
     }
     printf("Sum of %d numbers: %d\n",n,sum);
 }
+
+Palindrome of number:
+
+#include <stdio.h>
+int main() {
+    int number,originalNumber,rev=0,rem;
+    printf("Enter the number:");
+    scanf("%d",&number);
+    originalNumber=number;
+    
+    while(number!=0){
+        rem=number % 10;
+        rev=rev*10+rem; 
+        number=number/10;
+    } if(originalNumber==rev){
+        printf("The given number is palindrome");
+    } else {
+        printf("The given number is not a palindrome");
+    }
+    return 0;
+}
+
+Palindrome of string: 
+
+#include<stdio.h>
+#include<string.h>
+int main(){
+    char str[100];
+    int i,j,len,flag=1;
+    printf("Enter a string: ");
+    scanf("%s",str);
+    len=strlen(str);
+    for (i=0,j=len-1;i<len/2;i++,j--){
+        if(str[i]!=str[j]){
+            flag=0;
+            break;
+        }
+    }
+    if (flag){
+        printf("The string is a palindrome.\n");
+    } else {
+        printf("The string is not a palindrome.\n");
+   }
+    return 0;
+}
+
