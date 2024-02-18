@@ -114,3 +114,24 @@ int main(){
     return 0;
 }
 
+Reverse a string or number: 
+
+#include<stdio.h>
+
+void reverse(char *a){  //to traverse till the last character
+    if(*a){
+        if(*a != "\n"){
+        reverse(a+1);  //move to the next character
+        printf("%c", *a);
+        }
+    }
+}
+
+int main(){
+    char a[100];
+    printf("Enter the input: ");
+    scanf("%[^\n]s",a); // spaces are also scanned
+    reverse(a);
+    printf("\n");
+    
+}
